@@ -32,12 +32,7 @@ Environmental engineer turned developer. I bring analytical thinking and a passi
 
 ---
 
-<details>
-  <summary><b>📁 My Portfolio</b></summary>
+<summary><b>📁 My Portfolio</b></summary>
   <br/>
-  Check out my <a href="https://github.com/jyotsna-shrestha/jyotsna-shrestha">personal portfolio</a>
-</details>
+  Check out my <a href="https://jyotsnashrestha.com.np/">personal portfolio</a>
 
-[linkedin]: https://np.linkedin.com/in/jyotsna-shrestha
-[github]: https://github.com/jyotsna-shrestha
-[email]: mailto:jyotsna.shrestha@example.com
