@@ -1,6 +1,6 @@
 ### Hi there, I'm Jyotsna 👋
 
-## I'm an Environmental Engineer, Educator, and Developer
+## I'm an Environmental Engineer, Educator and Developer
 
 
 - I'm building at the intersection of environmental science and software
