@@ -2,26 +2,16 @@
 
 ## I'm an Environmental Engineer, Educator, and Developer
 
-- 🔭 I'm currently working at **Kodiary Technologies**
-- 🌱 I'm building at the intersection of environmental science and software
-- 👯 I'm looking to collaborate on impactful tech projects
-- ⚡ Fun fact: I speak **English, Hindi, and Nepali** fluently
 
----
+- I'm building at the intersection of environmental science and software
+- I'm looking to collaborate on impactful tech projects
 
-### Connect with me:
-
-[<img align="left" alt="Jyotsna Shrestha | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Jyotsna Shrestha | GitHub" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />][github]
-[<img align="left" alt="Jyotsna Shrestha | Gmail" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />][email]
-
-<br/>
 
 ---
 
 ### About Me
 
-Environmental engineer turned developer with 5+ years of teaching experience. I bring analytical thinking and a passion for sustainability into every project I build. Currently exploring the intersection of data science, web development, and environmental impact.
+Environmental engineer turned developer. I bring analytical thinking and a passion for sustainability into every project I build. Currently exploring the intersection of data science and environmental impact.
 
 ---
 
@@ -42,20 +32,10 @@ Environmental engineer turned developer with 5+ years of teaching experience. I 
 
 ---
 
-### GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=jyotsna-shrestha&show_icons=true&count_private=true&icon_color=8B5CF6&text_color=24292e&bg_color=ffffff&hide_title=true" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jyotsna-shrestha&size_weight=0.5&count_weight=0.5&langs_count=6&layout=compact" />
-</p>
-
----
-
 <details>
   <summary><b>📁 My Portfolio</b></summary>
   <br/>
-  Check out my <a href="https://github.com/jyotsna-shrestha/jyotsna-shrestha">personal portfolio</a> — a PWA with an animated starfield, aurora background, and sci-fi aesthetic built with vanilla HTML/CSS/JS.
+  Check out my <a href="https://github.com/jyotsna-shrestha/jyotsna-shrestha">personal portfolio</a>
 </details>
 
 [linkedin]: https://np.linkedin.com/in/jyotsna-shrestha
