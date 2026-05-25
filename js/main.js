@@ -10,9 +10,9 @@ class Star {
     this.x = Math.random() * w;
     this.y = Math.random() * h;
     this.size = Math.random() * 1.5 + 0.3 + (1 - depth) * 1.2;
-    this.speed = (Math.random() * 0.3 + 0.1) * (1 + (1 - depth) * 2);
+    this.speed = (Math.random() * 0.15 + 0.05) * (1 + (1 - depth) * 2);
     this.opacity = Math.random() * 0.5 + 0.3;
-    this.twinkleSpeed = Math.random() * 0.02 + 0.005;
+    this.twinkleSpeed = Math.random() * 0.008 + 0.002;
     this.twinklePhase = Math.random() * Math.PI * 2;
     // color tint: 0=white, 1=blue, 2=purple
     this.tint = Math.floor(Math.random() * 3);
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function getTheme() {
     const stored = localStorage.getItem('theme');
     if (stored) return stored;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return 'dark';
   }
 
   function setTheme(theme) {
