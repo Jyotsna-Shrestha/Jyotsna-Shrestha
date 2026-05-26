@@ -1,4 +1,4 @@
-PORT ?= 8080
+PORT ?= 8000
 
 .PHONY: serve stop clean
 

@@ -1,50 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jyotsna Shrestha - Environmental Engineer, Educator, and Developer.">
-  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="description" content="Jyotsna Shrestha — Environmental Engineer, Educator, and Developer.">
+  <meta name="theme-color" content="#14110e" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f0ea" media="(prefers-color-scheme: light)">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
   <title>Jyotsna Shrestha</title>
-  <link rel="stylesheet" href="/css/styles.css?v=23">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Newsreader:opsz,wght@6..72,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=24">
 </head>
+
 <body>
 
-  <canvas id="starfield"></canvas>
-  <div class="glow glow--1"></div>
-  <div class="glow glow--2"></div>
-  <div class="glow glow--3"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="blob blob--1" aria-hidden="true"></div>
+  <div class="blob blob--2" aria-hidden="true"></div>
+  <div class="blob blob--3" aria-hidden="true"></div>
 
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo"><span>J</span>S</a>
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-text">JS</span>
+        <span class="nav__logo-accent">.</span>
+      </a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li><a href="#work" class="nav__link">Work</a></li>
           <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#work" class="nav__link">Work</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
         <div class="nav__actions">
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-            <svg class="theme-toggle__icon theme-toggle__icon--light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <svg class="theme-toggle__icon theme-toggle__icon--dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
           </button>
           <button class="nav__close" id="nav-close" aria-label="Close menu">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
           </button>
         </div>
       </div>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
       </button>
     </nav>
   </header>
@@ -52,104 +82,92 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero__container">
-        <div class="hero__photo">
-          <img src="/images/photo.jpg" alt="Jyotsna Shrestha">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__first-name">Jyotsna</span>
+            <span class="hero__last-name">Shrestha</span>
+          </h1>
+          <p class="hero__tagline">
+            Building at the intersection of environmental science,<br>
+            education, and software.
+          </p>
+          <div class="hero__actions">
+            <a href="#work" class="btn btn--primary">See my work</a>
+            <a href="#contact" class="btn btn--outline">Get in touch</a>
+          </div>
         </div>
-        <h1 class="hero__title">
-          Jyotsna Shrestha
-        </h1>
-        <p class="hero__desc">
-          Building at the intersection of environmental science, education, and software.
-        </p>
-        <div class="hero__actions">
-          <a href="#work" class="btn btn--primary">See my work</a>
-          <a href="#contact" class="btn btn--ghost">Get in touch &rarr;</a>
+        <div class="hero__photo-group">
+          <div class="hero__photo-frame">
+            <div class="hero__photo-ring" aria-hidden="true"></div>
+            <div class="hero__photo-wrapper">
+              <img src="/images/photo.jpg" alt="Jyotsna Shrestha" class="hero__photo" loading="eager">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero__scroll">
+      <div class="hero__scroll" aria-hidden="true">
         <span>Scroll</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="container about__container">
-        <div class="about__left">
-          <h2 class="about__title">
-            Bridging environmental science<br>
-            <span class="about__highlight">with technology</span>
-          </h2>
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__top">
+          <span class="section__label">About</span>
+          <span class="section__line" aria-hidden="true"></span>
         </div>
-        <div class="about__right">
-          <p class="about__text">
-            With a background in environmental engineering and years of experience as an educator,
-            I bring a unique perspective to software development. I love creating solutions that
-            bridge the gap between technology and real-world impact.
-          </p>
-          <p class="about__text">
-            I'm building on my analytical and problem-solving skills to craft meaningful digital experiences.
-          </p>
-          <a href="https://np.linkedin.com/in/jyotsna-shrestha" target="_blank" rel="noopener noreferrer" class="about__link">LinkedIn profile &rarr;</a>
+        <div class="about__grid">
+          <div class="about__left">
+            <h2 class="about__title">
+              Bridging environmental science<br>
+              <span class="about__highlight">with technology</span>
+            </h2>
+          </div>
+          <div class="about__right">
+            <p class="about__text">
+              With a background in environmental engineering and years of experience as an educator,
+              I bring a unique perspective to software development. I love creating solutions that
+              bridge the gap between technology and real-world impact.
+            </p>
+            <blockquote class="about__quote">
+              <svg class="about__quote-mark" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
+              </svg>
+              Building solutions that bridge technology and meaningful impact.
+            </blockquote>
+            <p class="about__text">
+              I'm building on my analytical and problem-solving skills to craft meaningful digital experiences.
+            </p>
+            <a href="https://np.linkedin.com/in/jyotsna-shrestha" target="_blank" rel="noopener noreferrer"
+              class="about__link">LinkedIn profile &rarr;</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="work section" id="work">
       <div class="container">
-        <div class="section__header">
-          <span class="section__number">Selected Work</span>
+        <div class="section__top">
+          <span class="section__label">Selected Work</span>
+          <span class="section__line" aria-hidden="true"></span>
         </div>
         <div class="work__grid">
           <article class="work-card">
-            <a href="https://github.com/Jyotsna-Shrestha/online-marketplace" target="_blank" rel="noopener noreferrer" style="display:block;color:inherit;text-decoration:none">
-            <div class="work-card__image">
-              <div class="work-card__icon">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <a href="https://github.com/Jyotsna-Shrestha/sentiment-analysis-renewable-energy" target="_blank"
+              rel="noopener noreferrer" class="work-card__link">
+              <div class="work-card__top">
+                <span class="work-card__year">2026</span>
+                <span class="work-card__arrow" aria-hidden="true">→</span>
               </div>
-              <span class="work-card__year">2025</span>
-            </div>
-            <div class="work-card__body">
-              <h3 class="work-card__title">Online Marketplace</h3>
-              <p class="work-card__desc">A Django-based e-commerce marketplace for buying and selling — built with Python, featuring user auth, product listings, and order management.</p>
-              <div class="work-card__tags">
-                <span>Python</span>
-                <span>Django</span>
-                <span>SQL</span>
-                <span>HTML/CSS</span>
-              </div>
-            </div>
-            </a>
-          </article>
-          <article class="work-card">
-            <a href="https://github.com/Jyotsna-Shrestha/Community-Blog" target="_blank" rel="noopener noreferrer" style="display:block;color:inherit;text-decoration:none">
-            <div class="work-card__image">
-              <div class="work-card__icon">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-              </div>
-              <span class="work-card__year">2025</span>
-            </div>
-            <div class="work-card__body">
-              <h3 class="work-card__title">Community Blog</h3>
-              <p class="work-card__desc">A Django community blog for plant lovers — share posts with tags, leave comments, and save drafts before publishing.</p>
-              <div class="work-card__tags">
-                <span>Python</span>
-                <span>Django</span>
-                <span>HTML/CSS</span>
-              </div>
-            </div>
-            </a>
-          </article>
-          <article class="work-card">
-            <a href="https://github.com/Jyotsna-Shrestha/sentiment-analysis-renewable-energy" target="_blank" rel="noopener noreferrer" style="display:block;color:inherit;text-decoration:none">
-            <div class="work-card__image">
-              <div class="work-card__icon">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-              </div>
-              <span class="work-card__year">2026</span>
-            </div>
-            <div class="work-card__body">
               <h3 class="work-card__title">Renewable Energy Sentiment</h3>
-              <p class="work-card__desc">Sentiment analysis of Reddit discussions on hydro, solar, and wind energy using VADER and RoBERTa with comparative visualizations.</p>
+              <p class="work-card__desc">Sentiment analysis of Reddit discussions on hydro, solar, and wind energy using
+                VADER and RoBERTa with comparative visualizations.</p>
               <div class="work-card__tags">
                 <span>Python</span>
                 <span>NLP</span>
@@ -157,7 +175,41 @@
                 <span>RoBERTa</span>
                 <span>Jupyter</span>
               </div>
-            </div>
+            </a>
+          </article>
+          <article class="work-card work-card--alt">
+            <a href="https://github.com/Jyotsna-Shrestha/Power-BI-Project" target="_blank" rel="noopener noreferrer"
+              class="work-card__link">
+              <div class="work-card__top">
+                <span class="work-card__year">2026</span>
+                <span class="work-card__arrow" aria-hidden="true">→</span>
+              </div>
+              <h3 class="work-card__title">Power BI Sales Dashboard</h3>
+              <p class="work-card__desc">Analyzes fictional sales data to extract insights on product performance and
+                regional trends — featuring KPI metrics, map visuals, and interactive filtering.</p>
+              <div class="work-card__tags">
+                <span>Power BI</span>
+                <span>DAX</span>
+                <span>Power Query</span>
+                <span>Data Viz</span>
+              </div>
+            </a>
+          </article>
+          <article class="work-card">
+            <a href="https://github.com/Jyotsna-Shrestha/Community-Blog" target="_blank" rel="noopener noreferrer"
+              class="work-card__link">
+              <div class="work-card__top">
+                <span class="work-card__year">2025</span>
+                <span class="work-card__arrow" aria-hidden="true">→</span>
+              </div>
+              <h3 class="work-card__title">Community Blog</h3>
+              <p class="work-card__desc">A Django community blog for plant lovers — share posts with tags, leave
+                comments, and save drafts before publishing.</p>
+              <div class="work-card__tags">
+                <span>Python</span>
+                <span>Django</span>
+                <span>HTML/CSS</span>
+              </div>
             </a>
           </article>
         </div>
@@ -166,12 +218,16 @@
 
     <section class="skills section" id="skills">
       <div class="container">
-        <div class="section__header">
-          <span class="section__number">Expertise</span>
+        <div class="section__top">
+          <span class="section__label">Expertise</span>
+          <span class="section__line" aria-hidden="true"></span>
         </div>
-        <div class="skills__grid">
+        <div class="skills__content">
           <div class="skills__group">
-            <h3 class="skills__group-title">Environmental Engineering</h3>
+            <div class="skills__group-top">
+              <span class="skills__group-icon" aria-hidden="true">01</span>
+              <h3 class="skills__group-title">Environmental Engineering</h3>
+            </div>
             <div class="skills__tags">
               <span class="skill-tag">Impact Assessment</span>
               <span class="skill-tag">Data Analysis</span>
@@ -181,7 +237,10 @@
             </div>
           </div>
           <div class="skills__group">
-            <h3 class="skills__group-title">Development & Data</h3>
+            <div class="skills__group-top">
+              <span class="skills__group-icon" aria-hidden="true">02</span>
+              <h3 class="skills__group-title">Development &amp; Data</h3>
+            </div>
             <div class="skills__tags">
               <span class="skill-tag">Python</span>
               <span class="skill-tag">Data Science</span>
@@ -190,7 +249,10 @@
             </div>
           </div>
           <div class="skills__group">
-            <h3 class="skills__group-title">Teaching</h3>
+            <div class="skills__group-top">
+              <span class="skills__group-icon" aria-hidden="true">03</span>
+              <h3 class="skills__group-title">Teaching</h3>
+            </div>
             <div class="skills__tags">
               <span class="skill-tag">Curriculum Design</span>
               <span class="skill-tag">Mathematics</span>
@@ -202,18 +264,34 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact section" id="contact">
       <div class="container contact__container">
-        <h2 class="contact__title">Let's work<br>together</h2>
+        <div class="contact__left">
+          <h2 class="contact__title">Let's work<br>together</h2>
+          <div class="contact__decor" aria-hidden="true">
+            <svg width="120" height="12" viewBox="0 0 120 12" fill="none">
+              <line x1="0" y1="6" x2="100" y2="6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 4" />
+              <circle cx="110" cy="6" r="6" fill="currentColor" />
+            </svg>
+          </div>
+        </div>
         <div class="contact__right">
-          <p class="contact__text">I'm currently available for freelance projects and full-time opportunities. If you have a project in mind, let's talk.</p>
-          <a href="mailto:jyotsna.shrestha@example.com" class="contact__email">stha.jyotsna@gmail.com</a>
+          <p class="contact__text">I'm currently available for freelance projects and full-time opportunities. If you
+            have a project in mind, let's talk.</p>
+          <a href="mailto:stha.jyotsna@gmail.com" class="contact__email">stha.jyotsna@gmail.com</a>
           <div class="contact__socials">
             <a href="https://github.com/Jyotsna-Shrestha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
             </a>
-            <a href="https://np.linkedin.com/in/jyotsna-shrestha" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <a href="https://np.linkedin.com/in/jyotsna-shrestha" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
             </a>
           </div>
         </div>
@@ -225,16 +303,20 @@
     <div class="container footer__content">
       <p class="footer__copy">&copy; 2025 Jyotsna Shrestha</p>
       <div class="footer__links">
-        <a href="https://np.linkedin.com/in/jyotsna-shrestha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/Jyotsna-Shrestha" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://np.linkedin.com/in/jyotsna-shrestha" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </div>
   </footer>
 
   <a href="#home" class="scroll-up" id="scroll-up" aria-label="Scroll to top">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
   </a>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js?v=2"></script>
 </body>
+
 </html>
